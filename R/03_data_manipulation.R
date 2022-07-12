@@ -139,7 +139,7 @@ head(comm_df)
 comm_sp <- merge(comm_df, splist, by = "TaxCode")
 head(comm_sp)
 # same as: dplyr::left_join(comm_df, splist, by = "TaxCode)
-
+comm_sp_join <- dplyr::left_join(comm_df, splist, by = "TaxCode")
 # Table `comm_sp` and `traits`
 
 # Second, we added the species attribute data to the community table. In the `traits` table, the column that identifies the species is called `Sp`. Before doing the join, we need to change the name to match the name of the column in `comm_sp` which is `TaxCode`.
