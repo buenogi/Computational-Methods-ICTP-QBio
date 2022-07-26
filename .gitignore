@@ -18,6 +18,6 @@
 
  # the whole path of spatial data
 
- data/shapefiles/
- data/raster/
+*data/shapefiles/
+*data/raster/
 
