@@ -3,6 +3,21 @@
 .Rhistory
 .RData
 .Ruserdata
+.
 
 # Avoid adding html
 *.html
+
+# all zip files
+*.zip
+
+# Spatial data
+ *.shp
+ *.shx
+ *.dbf
+
+ # the whole path of spatial data
+
+ data/shapefiles/
+ data/raster/
+
