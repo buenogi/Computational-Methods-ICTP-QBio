@@ -7,7 +7,6 @@
 
 # Loading needed packages
 ibrary(dplyr)
-library(lme4)
 library(merTools)
 library(ggplot2)
 
@@ -26,7 +25,7 @@ lm(growth ~ tannin, data = df, family = gaussian(link = identity))
 summary(cuckoo)
 
 
-## Visualizing the dataggplot(cuckoo, aes(x = Mass, y = Beg, colour = Species)) + 
+## Visualizing the dataggplot(cuckoo, aes(x = Mass, y = Beg, colour = Species)) +
   geom_point() +
   theme_classic()
 

@@ -9,9 +9,18 @@ library(tidyr)
 
 # Loading function
 
-source("fct/LogGrowth.R")
+# Creating a function for logistic growth
+logGrowth <- function(t, y, p) {
+  N <- y[1]
+  with(as.list(p), {
+    dN.dt <- r * N * (1 - a * N)
+    return(list(dN.dt))
+  })
+}
+
 
 # named vector with parameters
+
 p <- c(r = 0.8, a = 0.05)
 # initial condition
 y0 <- c(N = 10)
