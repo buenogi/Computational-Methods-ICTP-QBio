@@ -5,8 +5,10 @@ author:
 - ^*1*^ ¡liibre! laboratório independente de informática da biodiversidade e reprodutibilidade em ecologia
 date: "July 7th 2022"
 output:
-  html_document:
-    df_print: paged
+  html_document: 
+   df_print: paged
+bibliography: sample.bib
+csl: journal-of-ecology.csl
 abstract: |
   it will be worth reading the report
 ---
@@ -59,4 +61,7 @@ knitr::include_graphics("../figs/02_species_abundance.png")
 
 ## Discussion
 
-It is time to synthesize your results and relate your findings with theory. 
+It is time to synthesize your results and relate your findings with theory. [@zuur_protocol_2010] 
+
+# References
+
